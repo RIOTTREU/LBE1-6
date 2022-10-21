@@ -1,4 +1,4 @@
-function LB2()
+function LB1()
     gg.clearResults()
     gg.searchNumber("11001~20008;0~255;-1::9",4)
     gg.refineNumber("11001~20008",4)
@@ -7,16 +7,16 @@ function LB2()
     RR1 = {{["address"] = RR[1].address -104,["flags"] = 4,["name"] = "map_info"},}
     gg.addListItems(RR1)
     RR2 = {
-        {["address"] = RR[1].address -100,["flags"] = 4,["value"] = "2260"},
-        {["address"] = RR[1].address -88,["flags"] = 4,["value"] = "16128"},
-        {["address"] = RR[1].address -84,["flags"] = 4,["value"] = "13312"},
+        {["address"] = RR[1].address -100,["flags"] = 4,["value"] = "1260"},
+        {["address"] = RR[1].address -88,["flags"] = 4,["value"] = "17920"},
+        {["address"] = RR[1].address -84,["flags"] = 4,["value"] = "8960"},
         {["address"] = RR[1].address + 204,["flags"] = 4,["value"] = "99999999"},
     }
     while true do
         GG = gg.getListItems()
         for i = 1,#GG do
-            if GG[i] ["name"] == "map_info" and GG[i] ["value"] ~= "2290" then
-                if GG[i] ["name"] == "map_info" and GG[i] ["value"] == "2260" then
+            if GG[i] ["name"] == "map_info" and GG[i] ["value"] ~= "1290" then
+                if GG[i] ["name"] == "map_info" and GG[i] ["value"] == "1260" then
                 else 
                     gg.setValues(RR2)
                 end
@@ -27,6 +27,6 @@ end
 while true do
     if gg.isVisible(true) then
         gg.setVisible(false)
-        LB2()
+        LB1()
     end
 end
