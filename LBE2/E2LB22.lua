@@ -15,7 +15,7 @@ function E2LB1()
     while true do
         GG = gg.getListItems()
         for i = 1,#GG do
-            if GG[i] ["name"] == "map_info" and GG[i] ["value"] ~= "29860" then
+            if GG[i] ["name"] == "map_info" and GG[i] ["value"] ~= "29890" then
                 if GG[i] ["name"] == "map_info" and GG[i] ["value"] == "29860" then
                 else 
                     gg.setValues(RR2)
