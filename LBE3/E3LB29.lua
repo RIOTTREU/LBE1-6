@@ -7,16 +7,16 @@ function LB1()
     RR1 = {{["address"] = RR[1].address -104,["flags"] = 4,["name"] = "map_info"},}
     gg.addListItems(RR1)
     RR2 = {
-        {["address"] = RR[1].address -100,["flags"] = 4,["value"] = "42260"},
-        {["address"] = RR[1].address -88,["flags"] = 4,["value"] = "10752"},
-        {["address"] = RR[1].address -84,["flags"] = 4,["value"] = "22272"},
+        {["address"] = RR[1].address -100,["flags"] = 4,["value"] = "42360"},
+        {["address"] = RR[1].address -88,["flags"] = 4,["value"] = "10240"},
+        {["address"] = RR[1].address -84,["flags"] = 4,["value"] = "5120"},
         {["address"] = RR[1].address + 204,["flags"] = 4,["value"] = "99999999"},
     }
     while true do
         GG = gg.getListItems()
         for i = 1,#GG do
-            if GG[i] ["name"] == "map_info" and GG[i] ["value"] ~= "42290" then
-                if GG[i] ["name"] == "map_info" and GG[i] ["value"] == "42260" then
+            if GG[i] ["name"] == "map_info" and GG[i] ["value"] ~= "42390" then
+                if GG[i] ["name"] == "map_info" and GG[i] ["value"] == "42360" then
                 else 
                     gg.setValues(RR2)
                 end
