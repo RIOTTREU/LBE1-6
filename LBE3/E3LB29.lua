@@ -15,10 +15,12 @@ function LB1()
     while true do
         GG = gg.getListItems()
         for i = 1,#GG do
-            if GG[i] ["name"] == "map_info" and GG[i] ["value"] ~= "42390" then
-                if GG[i] ["name"] == "map_info" and GG[i] ["value"] == "42260" then
-                else 
-                    gg.setValues(RR2)
+            if GG[i] ["name"] == "map_info" and GG[i] ["value"] ~= "42360" then
+                if GG[i] ["name"] == "map_info" and GG[i] ["value"] ~= "42390" then
+                    if GG[i] ["name"] == "map_info" and GG[i] ["value"] == "42260" then
+                    else 
+                        gg.setValues(RR2)
+                    end
                 end
             end
         end
